@@ -1,0 +1,53 @@
+{
+  "name": "hexat.studio",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Yusuke Sakurai <kerokerokerop@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "next"
+  },
+  "dependencies": {
+    "@zeit/next-typescript": "^1.0.0",
+    "jss": "^9.8.1",
+    "next": "^6.0.3",
+    "nuxt": "^1.0.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "@types/jss": "^9.5.3",
+    "@types/next": "^2.4.10",
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5"
+  },
+  "babel": {
+    "presets": [
+      "next/babel",
+      "@zeit/next-typescript/babel"
+    ]
+  },
+  "typescript": {
+    "compileOnSave": false,
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "jsx": "preserve",
+      "allowJs": true,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "lib": [
+        "dom",
+        "es2016"
+      ]
+    }
+  }
+}
