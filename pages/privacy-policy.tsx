@@ -1,9 +1,10 @@
-import {Default} from "../components/layout";
+import {Page} from "../components/layout";
 import * as React from "react";
 
 export default () => (
-  <Default>
+  <Page>
     <section>
+      <h1>プライバシーポリシー</h1>
       <p>Hexat Studio（以下、当事業者）は、当事業者が提供するすべてのサービスにおいて、以下の通り個人情報を取り扱います。</p>
       <p><strong>1.取得する情報について</strong></p>
       <p><strong>1.1 ユーザ登録情報</strong></p>
@@ -58,5 +59,5 @@ export default () => (
       <p>改訂履歴</p>
       <p>2017年5月27日 制定</p>
     </section>
-  </Default>
+  </Page>
 )

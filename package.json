@@ -1,31 +1,47 @@
 {
   "name": "hexat.studio",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "web application for hexat.studio",
   "author": "Yusuke Sakurai <kerokerokerop@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next"
   },
   "dependencies": {
+    "@material-ui/core": "^1.0.0",
+    "@material-ui/icons": "^1.0.0",
     "@zeit/next-typescript": "^1.0.0",
-    "jss": "^9.8.1",
+    "material-ui": "^1.0.0-beta.47",
     "next": "^6.0.3",
-    "nuxt": "^1.0.0",
+    "normalize.css": "^8.0.0",
+    "octicons": "^7.3.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "styled-jsx": "^2.2.6",
+    "styled-jsx-plugin-stylus": "^0.0.4",
+    "stylus": "^0.54.5",
     "typescript": "^2.8.3"
   },
   "devDependencies": {
-    "@types/jss": "^9.5.3",
     "@types/next": "^2.4.10",
     "@types/react": "^16.3.14",
-    "@types/react-dom": "^16.0.5"
+    "@types/react-dom": "^16.0.5",
+    "@types/styled-jsx": "^2.2.3"
   },
   "babel": {
     "presets": [
       "next/babel",
       "@zeit/next-typescript/babel"
+    ],
+    "plugins": [
+      [
+        "styled-jsx/babel",
+        {
+          "plugins": [
+            "styled-jsx-plugin-stylus"
+          ]
+        }
+      ]
     ]
   },
   "typescript": {

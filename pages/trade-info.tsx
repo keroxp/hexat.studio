@@ -1,8 +1,8 @@
-import {Default} from "../components/layout";
+import {Page} from "../components/layout";
 import * as React from "react";
 
 export default () => (
-  <Default>
+  <Page>
     <section>
       <h1>特定商取引法に基づく表記</h1>
       <p><strong>販売事業者</strong></p>
@@ -23,5 +23,5 @@ export default () => (
       <p><strong>返品について</strong></p>
       <p>商品の性質上、購入済み商品の返品・返金は行いかねますのでご了承ください。</p>
     </section>
-  </Default>
+  </Page>
 )

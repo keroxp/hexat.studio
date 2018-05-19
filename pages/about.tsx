@@ -1,53 +1,40 @@
 import * as React from "react";
-import {Default} from "../components/layout";
+import {Page} from "../components/layout";
+import Link from "next/link"
+import {FlexTable, FlexTableCellLeft, FlexTableCellRight} from "../components/flex-table";
 
+const styles = {
+  radialImage: {
+    border: "0px",
+    maxWidth: "100%",
+    height: "auto",
+    borderRadius: "50%"
+  },
+  columnLeft: {
+    width: "100px",
+    paddingRight: 30
+  }
+};
 export default () => (
-  <Default>
+  <Page>
     <section>
       <h2>About</h2>
-      <p>Hexat Studio（ヘキサットスタジオ）は、神奈川で活動しているソフトウェア制作者である@keroxpの個人レーベルです。</p>
-      <p>『キャラクターにプログラミングで命を吹き込む』ことをミッションにゲームなどのソフトウェア制作の活動をしています。</p>
+      <p>Hexat Studio（ヘキサットスタジオ）は<a href={"https://keroxp.me"}>@keroxp</a>の個人事務所です。</p>
+      <p>『キャラクターにプログラミングで命を吹き込む』ことをミッションに、『<Link href={"/arika"}><a>黒羽のアリカ</a></Link>』プロジェクトを主宰しています。</p>
       <h2>Profile</h2>
-      <p>櫻井雄介 / Yusuke Sakurai / @keroxp</p>
-      <p>1991年生まれ。栃木県足利市出身。男性。</p>
-      <ul>
-        2008年8月 : 高校卒業程度認定試験合格
-        2010年4月 : 慶應義塾大学総合政策学部入学
-        2014年3月 : 同卒業。学士（総合政策学）
-        2014年4月 : 慶應義塾大学大学院政策・メディア研究科入学
-        2016年3月 : 同修了。修士（増井俊之研究室, 政策・メディア）
-        2016年4月 : LINE株式会社入社（ソフトウェアエンジニア）
-        2017年2月 : 同退社。
-        2017年4月 : 個人事業主の開業（屋号: Hexat Studio）
-      </ul>
-      スキルセット
-
-      iOSアプリケーション開発
-      Androidアプリケーション開発
-      Webアプリケーション開発（フロント・バックエンド）
-      Unityゲーム開発
-      2Dキャラクターデザイン・イラスト制作
-      2Dキャラクターアニメーション
-      3Dモデリング
-      使用プログラミング言語
-
-      Objective-C（iOS開発）
-      Swift（iOS開発）
-      Kotlin（Android開発）
-      Javascript（Webフロント開発）
-      Node.js（Webバックエンド開発）
-      Ruby（コマンドラインツールなど）
-      C#（Unity開発）
-      Java（バックエンド）
-      使用ソフトウェア
-
-      MacOS
-      Unity（モバイルゲーム開発）
-      IntelliJ（プログラミングエディタ）
-      Spine（2Dアニメーション制作）
-      Blender（3Dモデリング）
-      Clip Studio Paint（2Dイラスト）
-      Affinity Designer（ベクターグラフィック）
+      <FlexTable>
+        <FlexTableCellLeft>
+          <img
+            src="https://78.media.tumblr.com/bad8348e63417d92c519b4093b6c28af/tumblr_inline_ojraxnrh4Q1qbzg3k_500.jpg"
+            width="100" style={styles.radialImage}/>
+        </FlexTableCellLeft>
+        <FlexTableCellRight>
+          <strong>櫻井雄介 / Yusuke Sakurai / <a href="https://twitter.com/keroxp" target="_blank">@keroxp</a></strong>
+          <p>横浜でソフトウェアエンジニアとして働きながら『黒羽のアリカ』プロジェクトを主宰しています。</p>
+          <p>キャラクターデザイン、Webサイト作成、イラスト作成、3DCG、アプリ開発など全てを担当。</p>
+          <p>詳しいプロフィールなどは<a href={"https://keroxp.me"} target={"_blank"}>こちら</a></p>
+        </FlexTableCellRight>
+      </FlexTable>
     </section>
-  </Default>
+  </Page>
 )

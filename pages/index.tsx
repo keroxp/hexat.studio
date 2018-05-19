@@ -1,8 +1,8 @@
 import * as React from "react";
-import {Default} from "../components/layout";
+import {Page} from "../components/layout";
 
 export default () => (
-  <Default>
+  <Page>
     <section className="container">
       <div>
         <h2 className="subtitle">
@@ -20,5 +20,5 @@ export default () => (
         </div>
       </div>
     </section>
-  </Default>
+  </Page>
 )
