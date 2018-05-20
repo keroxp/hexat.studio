@@ -32,9 +32,10 @@ const appStoreStyle = css`
   .download-on-appstore 
     display:inline-block;
     overflow:hidden;
-    margin: 12px 0;
+    margin: 12px 0 0 0;
     background:url(/static/img/download-on-appstore.svg) no-repeat;
-    width:128px;height:50px;
+    width:128px;
+    height:50px;
     background-size:contain;    
 `;
 const DownloadOnAppStore = () => (
