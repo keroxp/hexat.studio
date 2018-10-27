@@ -1,2 +1,5 @@
 const withTypescript = require('@zeit/next-typescript');
-module.exports = withTypescript();
+const config = require("./webpack.config");
+module.exports = withTypescript((config, options) => {
+
+});

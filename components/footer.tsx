@@ -2,32 +2,8 @@ import Link from "next/link"
 import * as React from "react";
 import {kContentPadding, kMaxContentWidth} from "../lib/constants";
 import css from "styled-jsx/css"
-
-const styles = css`
-  .footer
-    min-width 100%
-    background-color #444
-    color white
-    .inner
-      margin auto
-      max-width ${kMaxContentWidth}px
-      padding ${kContentPadding}px
-      display flex
-      flex-direction row
-      @media(max-width: ${kMaxContentWidth}px)
-        flex-direction column
-        text-align center
-      .footer-item
-        margin-left 15px
-        @media(max-width: 640px)
-          display block
-          padding 10px 0
-          margin 0
-        .footer-link
-          &a
-            color white          
-          text-decoration underline
-`;
+import footerCss from "../style/footer"
+const styles = css``;
 const FooterLInk = ({href, children}) => (
   <Link href={href}>
     <div className={"footer-item"}>

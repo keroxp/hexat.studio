@@ -7,8 +7,12 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export -o docs",
     "start": "next start"
   },
+  "types": [
+    "./style/stulus.d.ts"
+  ],
   "dependencies": {
     "@material-ui/core": "^1.0.0",
     "@material-ui/icons": "^1.0.0",
@@ -28,7 +32,13 @@
     "@types/next": "^2.4.10",
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
-    "@types/styled-jsx": "^2.2.3"
+    "@types/styled-jsx": "^2.2.3",
+    "css-loader": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.21.0",
+    "stylus-loader": "^3.0.2",
+    "ts-loader": "^4.4.2",
+    "webpack": "^4.16.2"
   },
   "babel": {
     "presets": [
@@ -45,27 +55,5 @@
         }
       ]
     ]
-  },
-  "typescript": {
-    "compileOnSave": false,
-    "compilerOptions": {
-      "target": "esnext",
-      "module": "esnext",
-      "jsx": "preserve",
-      "allowJs": true,
-      "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "removeComments": false,
-      "preserveConstEnums": true,
-      "sourceMap": true,
-      "skipLibCheck": true,
-      "baseUrl": ".",
-      "lib": [
-        "dom",
-        "es2016"
-      ]
-    }
   }
 }
